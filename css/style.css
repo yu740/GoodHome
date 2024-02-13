@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+        sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+    height: 100px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.header_menu {
+    display: flex;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+
+.header_menu li {
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header_menu li a span {
+    font-size: 16px;
+    font-weight: normal
+}
+
+.header_menu li::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #333;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.header_menu li:hover::after {
+    width: 100%;
+}
+
+.header_menu span {
+    display: block;
+}
+
+/*--------------------------------
+メインビジュアル
+---------------------------------*/
+.main_visual img {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*--------------------------------
+セクション
+---------------------------------*/
+.section {
+    padding: 50px 0;
+}
+
+/*--------------------------------
+こんなお悩みありませんか？
+---------------------------------*/
+.worries {
+    background-color: #e6f7ff;
+}
+
+.worries h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.worries h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.case {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.case_dev {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.case_dev p {
+    margin: 30px auto;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.case_dev img {
+    width: auto;
+    height: 250px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*--------------------------------
+GoodHomeならすべて解決できます！
+---------------------------------*/
+.solution h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.solution h1 span {
+    color: #dab584;
+}
+
+.point {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.point_man {
+    width: 500px;
+    height: auto;
+    margin: 0 50px;
+}
+
+.point_block {
+    padding: 0 10px;
+    margin: 0 50px;
+}
+
+.point_dev {
+    display: table;
+    width: 700px;
+    height: 120px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    margin: 45px auto;
+}
+
+.point_dev p {
+    display: table-cell;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.dev_color {
+    color: #ff5191;
+}
+
+/*--------------------------------
+数社との取引実績あり！
+---------------------------------*/
+.company h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.slider {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.slider li {
+    margin: 30px 0 10px 0;
+}
+
+.slider li img {
+    width: 150px;
+    height: auto;
+}
+
+/*--------------------------------
+ボタン
+---------------------------------*/
+.btn {
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #FFAB4B;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    box-shadow: 5px 5px 0px 0px #DEDEDE;
+}
+
+/*--------------------------------
+マッチングまでの簡単3ステップ!
+---------------------------------*/
+.three_step {
+    margin-top: 100px;
+    background-color: #e6f7ff;
+    border-radius: 25px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.step_title {
+    display: flex;
+    justify-content: center;
+}
+
+.step_heading {
+    vertical-align: middle;
+    margin: 50px 100px 0px 100px;
+}
+
+.step_heading h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.step_heading h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.suit_man {
+    height: 200px;
+    width: auto;
+    justify-content: center;
+}
+
+.suit_woman {
+    height: 200px;
+    width: auto;
+    justify-content: center;
+}
+
+.step_contents {
+    margin: 0 auto;
+}
+
+.step_contents {
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dev_img {
+    flex: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dev_text {
+    flex: 1;
+}
+
+.number {
+    font-size: 50px;
+}
+
+.dev_text p {
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;
+    display: inline-block;
+}
+
+/*--------------------------------
+豊富な物件を取り揃えています!
+---------------------------------*/
+.apart_slick h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.apart_slick h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.apart_lineup {
+    margin: 30px auto;
+}
+
+.apart_contents {
+    border: 1px solid#000;
+    background-color: #fff;
+    width: 400px;
+    height: 450px;
+    margin: 10px 20px;
+}
+
+.apart_contents img {
+    width: 100%;
+    height: 60%;
+}
+
+.apart_dev {
+    margin: 20px 0 20px 10px;
+}
+
+.apart_dev h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.apart_dev p {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+
+/*--------------------------------
+GoodHomeの思い
+---------------------------------*/
+.philosophy {
+    background-color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.philosophy img {
+    height: 750px;
+    margin: 0 auto;
+    opacity: 0.6;
+}
+
+.philosophy_dev {
+    position: absolute;
+    color: white;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 10px #000
+}
+
+.philosophy_dev h1 {
+    font-size: 45px;
+    margin: 50px auto;
+}
+
+.philosophy_dev h2 {
+    font-size: 28px;
+    margin: 25px auto;
+}
+
+.philosophy_dev ol li {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px auto;
+}
+
+/*--------------------------------
+フッター
+---------------------------------*/
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+}
+
+.footer_nav ul {
+    margin: 10px 50px;
+}
+
+.footer_nav ul li {
+    font-size: 18px;
+    margin: 25px;
+}
+
+.footer_nav ul li:first-child {
+    font-size: 25px;
+}
+
+.company_nav li {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    margin: 20px;
+}
+
+small {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
